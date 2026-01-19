@@ -1,0 +1,20 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e6e6e8;
+    margin: auto;
+}
+
+/* Header Styles */
+header {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+}
