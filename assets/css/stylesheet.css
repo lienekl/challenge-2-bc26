@@ -3,14 +3,14 @@
     --main-bg-color: #e6e6e8;
     --primary-color: #111a70;
     --accent-color: #eb2b2b;
-    --primary-font-family: "Roboto", sans-serif;
+    --primary-font-family: "DM Sans", sans-serif;
 }
 
 /* General Styles */
 
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "DM Sans", sans-serif;
     background-color: #e6e6e8;
     margin: auto;
 }
@@ -20,7 +20,7 @@ header {
     font-family: "Roboto", sans-serif;
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     padding: 30px;
 }
 
@@ -44,12 +44,23 @@ nav {
 }
 
 /* Main Styles */
+
+h1 {
+    width: 100%;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-align: center;
+} 
+
 .hero {
     width: 100%;
 }
 
 .section-services {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -57,19 +68,15 @@ nav {
 
 .service {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     width: 30%;
     border: var(--primary-color) solid 2px;
     border-radius: 20px;
-    text-align: center;
     margin: 20px;
-    flex-wrap: wrap;
 }
 
-h1 {
-    font-size: 20px;
-    color: var(--primary-color);
-    text-align: center;
-}
+
 
 .service-image {
     width: 85%;
@@ -98,10 +105,75 @@ h1 {
     cursor: pointer;
 }
 
+.contactus {
+    margin: auto;
+    padding: 30px;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    border: #eb2b2b solid 5px;
+    background-color: #eb2b2b;
+    color: #e6e6e8;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.button-form {
+    background-color: var(--primary-color) !important;
+    color: #e6e6e8;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-weight: bold;
+}
 /* Footer Styles */
 
 footer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 30px 30px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #111a70;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.footer-nav {
+    
+    columns: #e6e6e8;
+    text-decoration: none;
+    background-color: #111a70;
+    font-weight: 500;
+    line-height: 2;
+    font-size: 18px;
+    font-family:  var(--primary-font-family);
+}
+.footer-nav a{
     color: #e6e6e8;
+    text-decoration: none;
+}
+
+.footer-contactus {
+    display: flex;
+    flex-wrap: wrap;
+    color: #e6e6e8;
+}
+
+
+.logo-dark {
+    width: 250px;
+    position: relative;
+    display: flex;
+    margin-left: auto;
 }

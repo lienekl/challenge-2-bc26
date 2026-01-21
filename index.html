@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <title>JR Heating and Cooling | Domestic and Commercial Plumbing Services</title>
 </head>
 
@@ -38,9 +37,10 @@
                 <a href="#contact-us"><img class="hero" src="./assets/images/hero1.png" /></a>
             </div>
         </section>
+
         <section class="section-services">
             <div class="service">
-                <h1>Domestic & Industrial Gas Boilers</h1>
+                <h1>Domestic & Industrial <br>Gas Boilers</h1>
                 <img class="service-image" src="./assets/images/h-img1.jpg" />
                 <ul>
                     <li>Boiler Installation</li>
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="service">
-                <h1>Heat Pump Installation</h1>
+                <h1>Heat Pump <br>Installation</h1>
                 <img class="service-image" src="./assets/images/img2.png" />
                 <ul>
                     <li>Boiler Installation</li>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="service">
-                <h1>Air Conditioning Installation</h1>
+                <h1>Air Conditioning <br>Installation</h1>
                 <img class="service-image" src="./assets/images/img3.jpg" />
                 <ul>
                     <li>Boiler Installation</li>
@@ -87,17 +87,42 @@
 
         </section>
 
+        <section>
+            <div class="contactus">
+                <h1>Contact Us</h1>
+            </div>
+            <form>
+                <div class="form">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required />
+                    <label for="phone">Phone: </label>
+                    <input type="phone" name="phone" id="phone" required />
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required />
+                    <br><br>
+                    <input type="button" class="button-form" value="Submit" href="#">
+
+                </div>
+            </form>
+        </section>
+
     </main>
 
     <footer>
-        <div class="footer">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    
-                </ul>
-            </nav>
+        <div class="footer-nav">
+           
+                <a href="#home">Home</a><br>
+                <a href="#about">About</a><br>
+                <a href="#contact">Contact</a><br>
+                <a href="#services">Services</a><br>
+           
 
+        </div>
+        <div class="logo-dark">
+            <div class="footer-contactus">
+                <p>Contact Us: 07422512717</p>
+            </div>
+            <img class="logo-dark" src="./assets/images/logo2-2.png" />
         </div>
     </footer>
 
