@@ -26,17 +26,29 @@ header {
 
 .header {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     position: sticky;
+}
+
+.navbar {
+    display: flexbox;
+    color: #eb2b2b;
 }
 nav {
     color: #eb2b2b;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 1.5;
     font-weight: bold;
     position: absolute;
     right: 100px;
     top: 40px;
+}
+
+.navbar a {
+    color: #eb2b2b;
+    text-decoration: none;
 }
 
 .logo {
@@ -45,7 +57,7 @@ nav {
 
 /* Main Styles */
 
-h1 {
+h3 {
     width: 100%;
     font-size: 20px;
     color: var(--primary-color);
@@ -76,8 +88,6 @@ h1 {
     margin: 20px;
 }
 
-
-
 .service-image {
     width: 85%;
     padding: 10px;
@@ -105,14 +115,22 @@ h1 {
     cursor: pointer;
 }
 
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--primary-font-family);
+    font-size: 30px;
+}
 .contactus {
     margin: auto;
     padding: 30px;
+    font-size: 30px;
 }
 .form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
     padding: 20px;
     align-items: center;
     border: #eb2b2b solid 5px;
@@ -120,6 +138,9 @@ h1 {
     color: #e6e6e8;
     border-radius: 15px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .button-form {
@@ -133,6 +154,14 @@ h1 {
     font-size: 16px;
     margin: 4px 2px;
     font-weight: bold;
+}
+
+.aboutus-text {
+    font-family: var(--primary-font-family);
+    border: var(--accent-color) solid 2px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 /* Footer Styles */
 
@@ -164,10 +193,12 @@ footer {
     text-decoration: none;
 }
 
-.footer-contactus {
+.footer-contact {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     color: #e6e6e8;
+    margin: auto;
 }
 
 
