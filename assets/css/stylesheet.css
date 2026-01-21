@@ -13,6 +13,7 @@ body {
     font-family: "DM Sans", sans-serif;
     background-color: #e6e6e8;
     margin: auto;
+
 }
 
 /* Header Styles */
@@ -35,6 +36,7 @@ header {
     display: flexbox;
     color: #eb2b2b;
 }
+
 nav {
     color: #eb2b2b;
     text-decoration: none;
@@ -62,10 +64,15 @@ h3 {
     font-size: 20px;
     color: var(--primary-color);
     text-align: center;
-} 
+}
 
 .hero {
     width: 100%;
+}
+
+.heading {
+    margin: auto;
+    padding-top: 40px;
 }
 
 .section-services {
@@ -74,7 +81,7 @@ h3 {
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding-top: 15px;
+    padding-top: 0px;
     padding-bottom: 15px;
 }
 
@@ -88,6 +95,7 @@ h3 {
     margin: 20px;
 }
 
+
 .service-image {
     width: 85%;
     padding: 10px;
@@ -95,11 +103,13 @@ h3 {
     margin: auto;
     border-radius: 20px;
 }
+
 .button-div {
     display: flex;
     margin: auto;
     padding-bottom: 20px;
 }
+
 .button {
     border: none;
     border-radius: 40px;
@@ -121,30 +131,44 @@ h1 {
     font-family: var(--primary-font-family);
     font-size: 30px;
 }
+
 .contactus {
     margin: auto;
-    padding: 30px;
     font-size: 30px;
 }
-.form {
+
+.form-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-
-    padding: 20px;
     align-items: center;
-    border: #eb2b2b solid 5px;
+    padding: 20px;
     background-color: #eb2b2b;
-    color: #e6e6e8;
+    color: #ffffff;
+    font-size: 18px;
     border-radius: 15px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: var(--primary-color) solid 1px;
 }
 
 .button-form {
-    background-color: var(--primary-color) !important;
+    background-color: var(--primary-color);
     color: #e6e6e8;
     border-radius: 20px;
     border: none;
@@ -158,15 +182,18 @@ h1 {
 
 .aboutus-text {
     font-family: var(--primary-font-family);
+    font-size: 16px;
     border: var(--accent-color) solid 2px;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 30px;
+    text-align: center;
 }
+
 /* Footer Styles */
 
 footer {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -174,37 +201,61 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #111a70;
+    background-color: var(--primary-color);
     height: fit-content;
     box-sizing: border-box;
 }
+
 .footer-nav {
-    
+
     columns: #e6e6e8;
     text-decoration: none;
     background-color: #111a70;
     font-weight: 500;
     line-height: 2;
     font-size: 18px;
-    font-family:  var(--primary-font-family);
+    font-family: var(--primary-font-family);
 }
-.footer-nav a{
+
+.footer-nav a {
     color: #e6e6e8;
     text-decoration: none;
 }
 
-.footer-contact {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.footerlogo {
+    display: inline;
+    position: relative;
+    right: 0;
+    bottom: 20;
+    padding-right: 40px;
+    color: var(--main-bg-color);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.footer-contact a {
+
     color: #e6e6e8;
-    margin: auto;
 }
 
 
 .logo-dark {
     width: 250px;
-    position: relative;
+
+}
+
+/* Services site styles */
+.service-section {
+    display: inline;
+}
+
+.service2 {
     display: flex;
-    margin-left: auto;
+}
+
+.service-image2 {
+    width: 100%;
+    max-width: 300px;
+    
 }
