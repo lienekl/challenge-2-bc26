@@ -1,4 +1,14 @@
+/* Root Styles */
+:root {
+    --main-bg-color: #e6e6e8;
+    --primary-color: #111a70;
+    --accent-color: #eb2b2b;
+    --primary-font-family: "Roboto", sans-serif;
+}
+
 /* General Styles */
+
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #e6e6e8;
@@ -7,30 +17,91 @@ body {
 
 /* Header Styles */
 header {
-    display: flexbox;
     font-family: "Roboto", sans-serif;
     width: 100%;
     text-align: center;
-    padding: 30px;
     font-size: 16px;
-    margin: auto;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
 }
 nav {
-    display: flexbox;
     color: #eb2b2b;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
+    position: absolute;
+    right: 100px;
+    top: 40px;
 }
 
-.navbar {
-   
-}
 .logo {
-    width: 200px;
+    width: 250px;
 }
+
 /* Main Styles */
 .hero {
-    
+    width: 100%;
 }
 
+.section-services {
+    display: flex;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.service {
+    display: flex;
+    width: 30%;
+    border: var(--primary-color) solid 2px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 20px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.service-image {
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+}
+.button-div {
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.button {
+    border: none;
+    border-radius: 40px;
+    background-color: #eb2b2b;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+
+footer {
+    width: 100%;
+    background-color: #111a70;
+    color: #e6e6e8;
+}
