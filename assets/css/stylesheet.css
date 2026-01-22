@@ -11,7 +11,7 @@
 
 body {
     font-family: "DM Sans", sans-serif;
-    background-color: #e6e6e8;
+    background-color: var(--main-bg-color);
     margin: auto;
 
 }
@@ -30,15 +30,17 @@ header {
     align-items: center;
     flex-wrap: wrap;
     position: sticky;
+    flex: 1 1 200px;
 }
 
 .navbar {
     display: flexbox;
-    color: #eb2b2b;
+    color: var(--accent-color);
+    
 }
 
 nav {
-    color: #eb2b2b;
+    color: var(--accent-color);
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 1.5;
@@ -49,7 +51,7 @@ nav {
 }
 
 .navbar a {
-    color: #eb2b2b;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
@@ -90,11 +92,13 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     width: 30%;
+    max-width: 400px;
     border: var(--primary-color) solid 2px;
     border-radius: 20px;
     margin: 20px;
+    min-height: 700px;
+    flex: 1 1 300px;
 }
-
 
 .service-image {
     width: 85%;
@@ -113,7 +117,7 @@ h3 {
 .button {
     border: none;
     border-radius: 40px;
-    background-color: #eb2b2b;
+    background-color: var(--accent-color);
     color: #ffffff;
     font-weight: bold;
     padding: 10px 40px;
@@ -131,7 +135,14 @@ h1 {
     font-family: var(--primary-font-family);
     font-size: 30px;
 }
-
+h2 {
+    color: var(--accent-color);
+    font-size: 27px;
+}
+.h2 a{
+    text-decoration: underline;
+    color: var(--accent-color);
+}
 .contactus {
     margin: auto;
     font-size: 30px;
@@ -142,7 +153,7 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
-    background-color: #eb2b2b;
+    background-color: var(--accent-color);
     color: #ffffff;
     font-size: 18px;
     border-radius: 15px;
@@ -169,7 +180,7 @@ textarea {
 
 .button-form {
     background-color: var(--primary-color);
-    color: #e6e6e8;
+    color: var(--main-bg-color);
     border-radius: 20px;
     border: none;
     padding: 10px 40px;
@@ -182,18 +193,22 @@ textarea {
 
 .aboutus-text {
     font-family: var(--primary-font-family);
-    font-size: 16px;
-    border: var(--accent-color) solid 2px;
+    font-size: 18px;
+    color: #000000;
+    width: 60%;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 30px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Footer Styles */
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -208,9 +223,9 @@ footer {
 
 .footer-nav {
 
-    columns: #e6e6e8;
+    columns: var(--main-bg-color);
     text-decoration: none;
-    background-color: #111a70;
+    background-color: var(--primary-color);
     font-weight: 500;
     line-height: 2;
     font-size: 18px;
@@ -218,7 +233,7 @@ footer {
 }
 
 .footer-nav a {
-    color: #e6e6e8;
+    color: var(--main-bg-color);
     text-decoration: none;
 }
 
@@ -235,27 +250,11 @@ footer {
 }
 
 .footer-contact a {
-
-    color: #e6e6e8;
+    color: var(--main-bg-color);
 }
 
 
 .logo-dark {
     width: 250px;
 
-}
-
-/* Services site styles */
-.service-section {
-    display: inline;
-}
-
-.service2 {
-    display: flex;
-}
-
-.service-image2 {
-    width: 100%;
-    max-width: 300px;
-    
 }
