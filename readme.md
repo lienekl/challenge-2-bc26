@@ -16,6 +16,8 @@ A 'Contact Us' page featuring a contact form that allows visitors to submit thei
 
 Media queries applied to the header menu to ensure responsiveness across different screen sizes
 
+Use of CSS variables
+
 ## Links
 [GitHub Repository] (https://github.com/lienekl/challenge-2-bc26.git)
 [Live Website (GitHub Pages)] (https://lienekl.github.io/challenge-2-bc26/)
